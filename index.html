@@ -3,28 +3,72 @@
 <title>Name</title> <!--Insert name-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js'></script>
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <body>
   <header>
     <nav class="navigation"> <!--Navigation section start-->
-      <div class="logo">
-        <img src='insertPath' alt="Logo of company"> <!-- Insert sourse-->
-      </div>
-      <div class='nav-links'>
-        <a href="#">HOME</a>
-        <a href="#section1">Section1</a> <!-- Insert section name to ID and HTML-->
-        <a href="#section2">Section2</a> <!-- Insert section name to ID and HTML-->
-        <a href="#section3">Section3</a> <!-- Insert section name to ID and HTML-->
-        <a href="#section4">Section4</a> <!-- Insert section name to ID and HTML-->
-        <a href="#section5">Section5</a> <!-- Insert section name to ID and HTML-->
+      <div class='top-bar'>
+        <div class="logo">
+          <h1><strong>My</strong>App &trade;</h1>
+        </div>
+        <div class='right-bar'>
+          <div>
+            <img src='icons/icon-bell.svg' alt='Notification icon - bell'>
+          </div>
+          <div class='userDetails'>
+            <img src='icons/icon-bell.svg' alt='Notification icon - bell'>
+            <h2>`${UserName}`</h2>
+          </div>
+        </div>
       </div>
     </nav> <!--Navigation section end-->
     <div>
     </div>
   </header>
   <main> <!--Main section start-->
-    <div>
+    <div class='side-bar'>
+      <a href="#">HOME</a>
+      <a href="#section1">Section1</a> <!-- Insert section name to ID and HTML-->
+      <a href="#section2">Section2</a> <!-- Insert section name to ID and HTML-->
+      <a href="#section3">Section3</a> <!-- Insert section name to ID and HTML-->
+      <a href="#section4">Section4</a> <!-- Insert section name to ID and HTML-->
+      <a href="#section5">Section5</a> <!-- Insert section name to ID and HTML-->
+    </div>
+    <div class="main">
+      <div class="search-bar">
+        <h2>Dashboard</H2>
+        <div class="search">
+          <input type="text" id="search" name="search" placeholder="Search">
+        </div>
+      </div>
+      <div id='alert'>
+        <h3>Alert message! &times;</h3>
+      </div>
+      <div class="dashboard">
+      </div>
+      <div class="daily-traffic">
+      </div>
+      <div>
+        <div class="mobile-users">
+        </div>
+        <div class="social-stats">
+        </div>
+      </div>
+      <div>
+        <div class="new-members">
+        </div>
+        <div class="recent-activity">
+        </div>
+      </div>
+      <div>
+        <div class="message-user">
+        </div>
+        <div class="settings">
+        </div>
+      <div>
     </div>
   </main> <!--Main section end-->
   <footer> <!--Footer start-->
