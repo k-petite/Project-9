@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <body>
   <header>
     <nav class="navigation"> <!--Navigation section start-->
       <div class='top-bar'>
-        <div class="logo">
-          <h1><strong>My</strong>App &trade;</h1>
-        </div>
+        <span class="top-bar__logo">
+          <h1 class='top-bar__logo-bold'>My</h1>
+          <h1 class='top-bar__logo-normal'>App</h1>
+          <h1 class='top-bar__logo-tm'>&trade;</h1>
+        </span>
         <div class='top-bar__user-bar'>
           <!-- <div> -->
             <img src='icons/icon-bell.svg' alt='Notification icon - bell'>
           <!-- </div> -->
           <div class='userDetails'>
             <img src='icons/icon-bell.svg' alt='Notification icon - bell'>
-            <h2>`${UserName}`</h2>
+            <h2 class='top-bar__user-name'>`${UserName}`</h2>
           </div>
         </div>
       </div>
@@ -28,20 +32,20 @@
   </header>
   <main> <!--Main section start-->
     <div class='side-bar'>
-      <a href="#section1" class="side-menu__icon"><img src='icons/icon-dashboard.svg' alt='Dashboard icon' ></a> <!-- Insert section name to ID and HTML-->
-      <a href="#section2" class="side-menu__icon"><img src='icons/icon-members.svg' alt='Members icon'></a> <!-- Insert section name to ID and HTML-->
-      <a href="#section2" class="side-menu__icon"><img src='icons/icon-visits.svg' alt='Visits icon'></a> <!-- Insert section name to ID and HTML-->
-      <a href="#section2" class="side-menu__icon"><img src='icons/icon-settings.svg' alt='Settings icon'></a> <!-- Insert section name to ID and HTML-->
+      <div class='side-menu__button'><div class='side-menu__icon-left-border side-menu__icon-left-border--active'></div><a href="#section1" class="side-menu__icon"><img src='icons/icon-dashboard.svg' alt='Dashboard icon' ></a></div> <!-- Insert section name to ID and HTML-->
+      <div class='side-menu__button'><div class='side-menu__icon-left-border'></div><a href="#section2" class="side-menu__icon"><img src='icons/icon-members.svg' alt='Members icon'></a></div> <!-- Insert section name to ID and HTML-->
+      <div class='side-menu__button'><div class='side-menu__icon-left-border'></div><a href="#section2" class="side-menu__icon"><img src='icons/icon-visits.svg' alt='Visits icon'></a></div> <!-- Insert section name to ID and HTML-->
+      <div class='side-menu__button'><div class='side-menu__icon-left-border'></div><a href="#section2" class="side-menu__icon"><img src='icons/icon-settings.svg' alt='Settings icon'></a></div> <!-- Insert section name to ID and HTML-->
     </div>
     <div class="main">
       <div class="search-bar">
-        <h2>Dashboard</H2>
+        <h2 class="dashboard__header">Dashboard</H2>
         <div class="search">
           <input type="text" id="search" name="search" placeholder="Search">
         </div>
       </div>
-      <div id='alert'>
-        <h3>Alert message! &times;</h3>
+      <div class='dashboard__alert'>
+        <h3 class="dashboard__alert__message">Alert message! &times;</h3>
       </div>
       <div class="dashboard">
       </div>
