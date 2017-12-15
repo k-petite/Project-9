@@ -133,7 +133,7 @@ main {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
   text-align: center;
 }
@@ -172,7 +172,7 @@ main {
   margin: 0;
   text-align: right;
   text-align: left;
-  min-width: 300px;
+  min-width: 95%;
   border-radius: 2px;
 }
 
@@ -180,13 +180,31 @@ main {
   background-color: #7476bf;
   margin: .5em;
   border-radius: 5px;
+  padding: 12px;
+  color: white;
 }
 
 .dashboard__alert__message{
   margin: 0;
   padding: .4em;
-  color: white;
   font-weight: 400;
+  font-weight: bold;
+}
+
+
+.dashboard__alert__closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dashboard__alert__closebtn:hover {
+    color: black;
 }
 
 @media (min-width:478px) {
