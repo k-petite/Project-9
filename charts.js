@@ -5,7 +5,6 @@ var myChart = new Chart(ctx, {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         // Chart.defaults.global.legend: [display: 'false'],
         datasets: [{
-            label: 'none',
             data: [50, 100, 175, 125, 225, 100, 100],
             backgroundColor: [
                 '#e2e4f6'
@@ -35,7 +34,6 @@ var myChart = new Chart(ctx, {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         // Chart.defaults.global.legend: [display: 'false'],
         datasets: [{
-            label: 'none',
             data: [50, 100, 175, 125, 225, 100, 100],
             backgroundColor: [
                 '#7276bf',
@@ -52,6 +50,38 @@ var myChart = new Chart(ctx, {
       legend: {
          display: false
       },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+
+var ctx = "mobile-users";
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
+        // Chart.defaults.global.legend: [display: 'false'],
+        datasets: [{
+            data: [50, 100, 175, 125, 225, 100, 100],
+            backgroundColor: [
+                '#7276bf',
+                '#7276bf',
+                '#7276bf',
+                '#7276bf',
+                '#7276bf',
+                '#7276bf',
+                '#7276bf',
+            ],
+        }]
+    },
+    options: {
         scales: {
             yAxes: [{
                 ticks: {
